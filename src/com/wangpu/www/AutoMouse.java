@@ -83,7 +83,7 @@ public class AutoMouse {
             Calendar c= Calendar.getInstance();
             timeSecond = c.get(Calendar.SECOND);
             timeMinute = c.get(Calendar.MINUTE);
-            if (i%100 == 0) System.out.println("现在时间是" +timeMinute +"分"+timeSecond +"秒，距离点击还有"+(60 - timeMinute)+"分"+(60-timeSecond)+"秒");
+            if (i%100 == 0) System.out.println("现在时间是" +timeMinute +"分"+timeSecond +"秒，距离点击还有"+(59 - timeMinute)+"分"+(60-timeSecond)+"秒");
         }while (timeSecond != 0 || timeMinute != 0 );
         leftClick();
         System.out.println("点击完成,点击时间为"+timeMinute+"分"+timeSecond+"秒");
